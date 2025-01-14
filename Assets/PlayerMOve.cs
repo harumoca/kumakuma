@@ -18,6 +18,10 @@ public class PlayerMOve : MonoBehaviour
         {
             transform.position += transform.forward*speed;
         }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.position -= transform.forward * speed;
+        }
         if (Input.GetKey(KeyCode.D))
         {
             transform.position += transform.right * speed;
