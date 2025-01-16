@@ -7,11 +7,13 @@ public class Dance : MonoBehaviour
     int count = 0;
     public int maxCount = 2;
     Animator anim;
+    public GameObject sakana;
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
         anim = GetComponent<Animator>();
+        sakana.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,9 +24,11 @@ public class Dance : MonoBehaviour
             if (count <= maxCount)
             {
                 count++;
+                sakana.gameObject.SetActive(true);
             }
             else
             {
+                
                 count = 0;
             }
             anim.SetInteger("counter", count);
