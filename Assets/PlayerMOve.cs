@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 
 public class PlayerMOve : MonoBehaviour
@@ -30,6 +31,7 @@ public class PlayerMOve : MonoBehaviour
         {
             transform.position -= transform.right * speed;
         }
+        
 
     }
 }
